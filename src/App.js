@@ -11,7 +11,7 @@ import { useHistory } from "react-router-dom";
 function App() {
   const [isAuthenticating, setIsAuthenticating] = useState(true);
   const [isAuthenticated, userHasAuthenticated] = useState(false);
-  const history = useHistory;
+  const history = useHistory();
 
   useEffect(() => {
     onLoad();
