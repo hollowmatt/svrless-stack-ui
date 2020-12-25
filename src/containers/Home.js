@@ -44,7 +44,7 @@ export default function Home() {
                     </ListGroup.Item>
                 </LinkContainer>
                 {notes.map(({ noteId, content, createdAt }) => (
-                    <LinkContainer key={noteId} to={`/notes/$noteId`}>
+                    <LinkContainer key={noteId} to={`/notes/${noteId}`}>
                         <ListGroup.Item action>
                             <span className="font-weight-bold">
                                 {content.trim().split("\n")[0]}
